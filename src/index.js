@@ -1,7 +1,7 @@
 import express from 'express';
 import http from 'http';
 import bp from 'body-parser';
-import { db } from './src/connect.js';
+import { db } from './connect.js';
 const app = express();
 app.set('port',9000);
 app.use(bp.json({limit: '10mb'}));
